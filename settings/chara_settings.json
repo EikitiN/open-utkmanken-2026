@@ -1,0 +1,36 @@
+{
+    "position": {
+        "left": {"x": 15, "y": 0, "translateX": "0%"},
+        "mid": {"x": 50, "y": 0, "translateX": "-50%"},
+        "center": {"x": 50, "y": 0, "translateX": "-50%"},
+        "right": {"x": 85, "y": 0, "translateX": "-100%"}
+    },
+    "size": {
+        "chara": {"width": 35, "height": "auto"},
+        "large": {"width": 45, "height": "auto"},
+        "full": {"width": 100, "height": "auto"}
+    },
+    "color": {
+	    "None": "#808080",
+        "Z_test": "#FFFFFF"
+    },
+
+    "typewriterInterval": {
+        "immediately": 0,
+        "fast": 10,
+        "normal": 25,
+        "slow": 40
+    },
+    "typewriterFade": {
+        "immediately": 0,
+        "fast": 15,
+        "normal": 38,
+        "slow": 60
+    },
+
+    "automode_time": {
+        "fast": 1000,
+        "normal": 4000,
+        "slow": 8000
+    }
+}

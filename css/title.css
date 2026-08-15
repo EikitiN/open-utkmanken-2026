@@ -1,0 +1,302 @@
+
+
+/*タイトル画面*/
+    #mainlogotype,#mainlogotype_anim{
+        position: absolute;
+        height: 20%;
+        width: 100%;
+    }
+    #mainlogotype{
+        top: 0%;
+    }
+    .logo_nomal_position{
+        top: 0%;
+    }
+
+    .logo_center_position{
+        top: 33%;
+    }
+        
+
+    #titlelogo,#titlelogo_anim{/*20260728午前 Lineのものに調整待機: html要素の変更*/
+        position: absolute;
+        width: 100%;
+    }
+
+    #mainlogotype{
+        top: 0%;
+    }
+
+
+    #logo_base{/*20260728午前 Lineのものに調整*/
+        position: absolute;
+        width: 95%;
+        aspect-ratio: 720 / 168;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: #262626;
+    }
+
+    #logo_base_anim{/*20260728午前 Lineのものに調整*/
+        position: absolute;
+        width: 95%;
+        aspect-ratio: 720 / 168;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: #262626;
+    }
+
+
+
+    #pendant,#pendant_anim{/*20260728午前 Lineのものに調整待機: html要素の変更*/
+        position: absolute;
+        width: 2.5%;
+        right: 5%;
+        top: 64.6%;
+    }
+
+
+    #largebuttonblock{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin: 0 auto;
+        width: 75%;
+        height: 9%;
+        background-color: gray;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    #titlebg{
+        width: 100%;
+        height: 100%;
+        z-index: 20;
+        background-size: cover;
+        background-position: center;
+        background-image: var(--titlebg-url);/*url("../material/back_image/title_default.jpg");*/
+    }
+
+    #smallbuttonblock{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin: 0 auto;
+        width: 55%;
+        height: 23%;
+        
+    }
+
+    #tooliconblock{
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin: 0 auto;
+        width: 75%;
+        height: 11%;
+    }
+
+    .title_largebutton{
+        width: 100%;
+        height: 100%;
+        background-color: #262626;
+        padding: 1.51cqw;
+        border: none;
+        /*画像を読み込むのではなく、cssのみに変更
+        background-image: var(--title_largebutton-url);, url("../material/button/small_button.svg")
+        */
+    }
+
+    .title_largebutton:active .Lbutton_frame{
+        border: 0.5cqw solid #FF6000;
+    }
+
+    .title_largebutton:active{
+        background-color: #303030;
+    }
+
+    .Lbutton_frame{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+
+        border: 0.5cqw solid white;
+
+        font-size: 8cqw;
+        font-family: "Kaiso";
+        color: white;
+
+        padding-top: 0.5cqw;
+    }
+
+    .title_smallbutton{
+        width: 100%;
+        aspect-ratio: 103 / 20;
+        background-size: cover;
+        background-image: var(--title_smallbutton-url);/*, url("../material/button/small_button.svg")*/
+        background-position: center;
+        font-size: 5cqw;
+        font-family: "Kaiso";
+        border: 2px solid #202040;
+        padding-top: 1.7%;
+        color: #202020;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .title_smallbutton:active{
+        opacity: 0.9;
+        border: 2px solid #402040;
+    }
+
+
+    .toolicon{
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        border: 7px outset #FF7F4E;
+        outline: solid #202040 3px;
+    }
+
+    .toolicon:active{
+        border: 1vh inset #FF7F4E;
+    }
+
+    
+    #cameraicon{
+        background-image: var(--cameraicon-url);/*url("../material/button/cameraicon.svg")*/
+    }
+
+    #codeicon{
+        background-image: var(--codeicon-url);/*url("../material/button/codeicon.svg")*/
+    }
+
+    #settingicon{
+        background-image: var(--settingicon-url);/*url("../material/button/settingicon.svg")*/
+    }
+    
+/*謎解きモード*/
+
+    .mysterybuttonblock{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        width: 80%;
+        height:70%;
+
+        display: flex;
+        background-color: gray;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 3%;
+    }
+
+    .mysterybutton{
+        width: 30%;
+        aspect-ratio: 1;
+    }
+
+
+/*レコードモード*/
+
+    #log_block{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 70%;
+        background-color: gray;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .log_button{
+        height: 7%;
+        width: 100%;
+    }
+
+    #record_div{
+        position: absolute;
+        right: 0;
+        top: 15%;
+        height: 73%;
+        width: 95%;
+        background-color: gray;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    #summary_box{
+        position: absolute;
+        background-color: white;
+        top: 45%;
+        height: 40%;
+        width: 90%;
+
+    }
+
+    #replay_story{
+        position: absolute;
+        top: 90%;
+        right: 10%;
+    }
+
+    .pictures_div{
+        position: absolute;
+        top: 10%;
+        height: 30%;
+        width: 90%;
+    }
+
+    .pictures{
+        position: absolute;
+        height: 80%;
+        aspect-ratio: 4 / 3;
+        background-color: lightgray;
+    }
+
+    #pictures_1{
+        left: 20%;
+    }
+    
+    #pictures_2{
+        left: 50%;
+    }
+
+    .cAtestIMAGE{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        max-width: 100%;
+        max-height: 100%;
+    }

@@ -1,0 +1,10 @@
+HTML/maindisplay/maindisplay.html|202608151446
+HTML/maindisplay/menu.html|202608092036
+HTML/title/camera.html|202607112257
+HTML/title/maintitle.html|202608051739
+HTML/title/record.html|202608011656
+HTML/title/solvingmode.html|202608011656
+HTML/title/record_summary.html|202608031429
+HTML/maindisplay/backlog.html|202608101128
+HTML/title/logo_anim.html|202608032158
+HTML/general/settings.html|202608130101
