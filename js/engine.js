@@ -50,19 +50,23 @@ const OriginalConsoleError = console.error;
 console.log = function(...args) {
 	OriginalConsoleLog.apply(console, args);
 	if (isdev) {
-		document.body.insertAdjacentHTML('afterbegin', `<p id="isdevconsole" style="color: #FFF">${args}</p>`);
+		document.getElementById("body_contents").querySelector("#alertdiv")?.insertAdjacentHTML('afterbegin', `<p id="isdevconsole" style="color: #FFF">${args}</p>`);
+		document.getElementById("body_contents").querySelector("#alertdiv")?.classList.add('is_open');
 		setTimeout(() => {
 			const removecontent = document.getElementById("isdevconsole");
+			document.getElementById("body_contents").querySelector("#alertdiv")?.classList.remove('is_open');
 			if (removecontent) removecontent.remove();
-		}, 1000);
+		}, 2000);
 	}
 }
 console.warn = function(...args) {
 	OriginalConsoleWarn.apply(console, args);
 	if (isdev) {
-		document.body.insertAdjacentHTML('afterbegin', `<p id="isdevconsole" style="color: #FF0">${args}</p>`);
+		document.getElementById("body_contents").querySelector("#alertdiv")?.insertAdjacentHTML('afterbegin', `<p id="isdevconsole" style="color: #FF0">${args}</p>`);
+		document.getElementById("body_contents").querySelector("#alertdiv")?.classList.add('is_open');
 		setTimeout(() => {
 			const removecontent = document.getElementById("isdevconsole");
+			document.getElementById("body_contents").querySelector("#alertdiv")?.classList.remove('is_open');
 			if (removecontent) removecontent.remove();
 		}, 5000);
 	}
@@ -70,9 +74,11 @@ console.warn = function(...args) {
 console.error = function(...args) {
 	OriginalConsoleError.apply(console, args);
 	if (isdev) {
-		document.body.insertAdjacentHTML('afterbegin', `<p id="isdevconsole" style="color: #F00">${args}</p>`);
+		document.getElementById("body_contents").querySelector("#alertdiv")?.insertAdjacentHTML('afterbegin', `<p id="isdevconsole" style="color: #F00">${args}</p>`);
+		document.getElementById("body_contents").querySelector("#alertdiv")?.classList.add('is_open');
 		setTimeout(() => {
 			const removecontent = document.getElementById("isdevconsole");
+			document.getElementById("body_contents").querySelector("#alertdiv")?.classList.remove('is_open');
 			if (removecontent) removecontent.remove();
 		}, 10000);
 	}
